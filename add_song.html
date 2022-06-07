@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href=static/css/add_song_style.css>
+    <meta charset="UTF-8">
+    <title>login page</title>
+</head>
+<body>
+
+<div class="header">
+    <nav>
+        <h2>SOME MUSIC</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="add_song.html" class="active">Add Song</a></li>
+            <li><a href="logout.html">Logout</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</div>
+<section>
+    <br><br><br>
+    <div class="form">
+
+<h1>Add New Song</h1><br>
+
+<form action="/register" method="post">
+    <label>Song Name:</label>
+     <input type="text" name="uname" >
+    
+    <label>Date of Release</label>
+     <input type="date" name="date" >
+    
+    
+    <label>Artwork</label>
+     <input type="file" name="Artwork" >
+    
+    <div class="box">
+        <a class="button" href="#divOne">Add Artist</a>
+    </div>
+    
+
+    <label>Artist</label>
+     <input type="text">
+    
+    <a href="login.html"><input type="submit" class="submit" value="Register"></a>
+
+</form>
+    <div class="overlay" id="divOne">
+        <div class="wrapper">
+            <h2>Add Artist</h2><a class="close" href="#">&times;</a>
+            <div class="content">
+                <div class="container">
+                    <form>
+                        <label>Artist Name</label>
+                        <input type="text" name="uname" placeholder="enter artist name" >
+                        <label>Date of Birth</label>
+                        <input type="date" name="date">
+                        <label>Bio</label>
+                        <textarea  cols="41" rows="5"></textarea>
+                        <input type="submit" class="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+</div>
+<br>
+<br>
+</section>
+<div class="footer">
+copyright &copy; 2022, by Some Music 
+</div>
+</body>
+</html>
